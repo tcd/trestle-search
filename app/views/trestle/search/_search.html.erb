@@ -34,8 +34,8 @@
               <%= filter.render(f, params[:f]) %>
             <% end %>
 
-            <%= f.submit admin.t("search.filter", default: "Filter"), class: "btn btn-info btn-block" %>
-            <%= link_to admin.t("search.reset_filters", default: "Reset Filters"), persistent_params.except(:f), class: "btn btn-light btn-sm btn-block" if admin.filters.active(params).any? %>
+            <%= f.submit(admin.t("search.filter", default: "Filter"), class: "btn btn-info btn-block") %>
+            <%= link_to(admin.t("search.reset_filters", default: "Reset Filters"), persistent_params.except(:f), class: "btn btn-light btn-sm btn-block") if admin.filters.active(params).any? %>
           </div>
         </script>
       <% end %>

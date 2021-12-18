@@ -36,9 +36,11 @@ $(document).on('mousedown', function (e) {
 
     // Hide the popover unless clicking within the popover,
     // the popover trigger or a flatpickr calendar
-    if (!clickTarget.closest(popover).length &&
-        !clickTarget.closest(trigger).length &&
-        !clickTarget.closest(flatpickr).length) {
+    if (
+      !clickTarget.closest(popover).length &&
+      !clickTarget.closest(trigger).length &&
+      !clickTarget.closest(flatpickr).length
+    ) {
       trigger.popover('hide')
     }
   }
