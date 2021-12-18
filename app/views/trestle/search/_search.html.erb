@@ -9,7 +9,7 @@
                 <span class="input-group-text"><i class="fa fa-search"></i></span>
               </div>
 
-              <%= search_field_tag(:q, params[:q], class: "form-control search-field", autocomplete: "off", placeholder: admin.t("search.placeholder", default: "Search", list: "trestle_search_suggestions")) %>
+              <%= search_field_tag(:q, params[:q], class: "form-control search-field", autocomplete: "off", placeholder: admin.t("search.placeholder", default: "Search")) %>
 
               <%= link_to(icon("fa fa-times"), admin.path, class: "clear-search") if params[:q].present? %>
             </div>
