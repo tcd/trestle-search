@@ -47,7 +47,8 @@ module Trestle
       end
 
       module CollectionMethods
-        def collection(params={})
+        def collection(params = {})
+          return collection if params[:tagSearchType]
           collection = search(params) || super
           collection = filter(collection, params)
           collection
