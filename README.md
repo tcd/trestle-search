@@ -52,6 +52,14 @@ end
 4. [Sunspot](https://github.com/TrestleAdmin/trestle-search/wiki/Integration-with-Sunspot)
 
 
+## Contributing
+
+- Check out the repository
+- Install dependencies:
+    - `bundle install`
+    - `npm install`
+
+
 ## License
 
 The gem is available as open source under the terms of the [LGPLv3 License](https://opensource.org/licenses/LGPL-3.0).
